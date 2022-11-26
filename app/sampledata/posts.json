@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "author": "Человеков Человек",
+      "authorAvatar": "@sample/posts_avatars",
+      "published": "1 may в 10:00",
+      "content": "Всем привет! А вот и Я!",
+      "link": "https://vk.com/",
+      "likedByMe": true,
+      "likes": 5,
+      "nameOrganization": "Denis",
+      "position": "Program",
+      "dateTime": "11 may 2022 года"
+    }
+  ]
+}
+
