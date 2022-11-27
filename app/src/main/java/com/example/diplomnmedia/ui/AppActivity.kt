@@ -12,6 +12,7 @@ import androidx.core.view.GravityCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
+import com.example.diplomnmedia.BuildConfig
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.firebase.messaging.FirebaseMessaging
@@ -43,9 +44,6 @@ class AppActivity : AppCompatActivity() {
     @Inject
     lateinit var googleApiAvailability: GoogleApiAvailability
 
-    companion object {
-        private const val MAPKIT_API_KEY = "c3e8cdf8-5cf9-4f1f-9c26-a37a7a4488bd"
-    }
 
     lateinit var binding: ActivityAppBinding
 
@@ -53,7 +51,7 @@ class AppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey(MAPKIT_API_KEY)
+        MapKitFactory.setApiKey("${BuildConfig.API_KEY}")
         binding = inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
